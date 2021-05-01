@@ -1,2 +1,8 @@
 # editor
-.idea
+.idea/
+
+# other
+node_modules/
+build/
+
+

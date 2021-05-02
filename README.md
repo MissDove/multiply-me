@@ -6,6 +6,14 @@
 
 **Constraints**: On mobile devices the grid will display 1 number per row. On tablet devices 2 numbers per row and on desktop and larger devices 3 numbers per row. The numbers should fill their rows equally. When the screen width grows very large a margin should appear either side of the grid so that the boxes don’t keep getting larger.
 
+### Understanding the problem
+
+#### What is a `multiple of a number` ?
+
+The multiples of a number are all the numbers that are products of the number and any other integer.\
+For example, the multiples of 2 are 2, 4, 6, 8, 10, 12, 14, 16, and so on.\
+The multiples of 10 are 10, 20, 30, 40, 50, 60 ,and so on.
+
 ### How to run this app
 
 * Run `yarn install` or `npm install` to install all the dependencies

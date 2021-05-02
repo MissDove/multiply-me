@@ -1,3 +1,97 @@
-body {
-    color: red;
+@font-face {
+    font-family: "ModernEraRegular";
+    src: url("../assets/modern-era/modern-era-regular/ModernEra-Regular.eot") format("truetype"); /* IE9 Compat Modes */
+    src: url("../assets/modern-era/modern-era-regular/ModernEra-Regular.woff") format("woff"),
+        /* Modern Browsers */ url("../assets/modern-era/modern-era-regular/ModernEra-Regular.woff2") format("woff2"),
+        /* Modern Browsers */ url("../assets/modern-era/modern-era-regular/ModernEra-Regular.otf") format("truetype"),
+        /* Safari, Android, iOS */
+    url("../assets/modern-era/modern-era-regular/ModernEra-Regular.svg#ModernEra-Regular") format("svg"); /* Legacy iOS */
 }
+
+:root {
+    --main-text-color: #333331;
+    --main-background-color: #F5C2BA;
+    --main-number-background-color: #DE7573;
+    --main-number-color: #913946;
+}
+
+body {
+    font-family: "ModernEraRegular", Arial, sans-serif;
+    color: var(--main-text-color);
+    width: 90%;
+    margin: 64px auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 100%;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    background: var(--main-background-color);
+    border-radius: 4px;
+    padding: 32px 32px 16px;
+}
+
+
+.square-box {
+    /*display: inline-flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 50px;
+    width: 50px;
+    color: var(--main-number-color);
+    background: var(--main-number-background-color);
+    font-size: 16px;
+    border: 2px solid var(--main-number-color);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    /*flex: 1 0 calc(98% - 16px);*/
+}
+
+@media screen and (max-width: 640px) {
+    .main-container {
+        grid-template-columns: 100%;
+    }
+
+    .square-box {
+        /*flex: 1 0 calc(98% - 16px);*/
+        /*max-width: 400px;*/
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .square-box {
+        /*flex: 1 0 calc(48% - 16px);*/
+        /*max-width: 340px;*/
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .main-container {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .square-box {
+        /*flex: 1 0 calc(33% - 16px);*/
+        /*max-width: 600px;*/
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

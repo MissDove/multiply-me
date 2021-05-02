@@ -4,5 +4,6 @@
 # other
 node_modules/
 build/
+coverage/
 
 

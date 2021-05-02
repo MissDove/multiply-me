@@ -1,0 +1,13 @@
+/* Webfont: ModernEra-Regular */
+@font-face {
+    font-family: "ModernEra";
+    src: url("ModernEra-Regular.eot"); /* IE9 Compat Modes */
+    src: url("ModernEra-Regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("ModernEra-Regular.woff") format("woff"),
+        /* Modern Browsers */ url("ModernEra-Regular.woff2") format("woff2"),
+        /* Modern Browsers */ url("ModernEra-Regular.otf") format("truetype"),
+        /* Safari, Android, iOS */ url("ModernEra-Regular.svg#ModernEra-Regular") format("svg"); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

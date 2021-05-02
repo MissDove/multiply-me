@@ -13,11 +13,13 @@
   "dependencies": {
     "@babel/core": "7.7.4",
     "@babel/preset-env": "7.7.4",
-    "css-loader": "3.2.0",
-    "jest": "24.9.0",
-    "style-loader": "1.0.0"
+    "jest": "24.9.0"
   },
   "devDependencies": {
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
     "webpack": "^4.28.3",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.1.14"

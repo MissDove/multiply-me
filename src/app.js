@@ -13,14 +13,6 @@ const generateSquare = (number) => {
     mainContainer.appendChild(squareBox);
 };
 
-console.log();
-
-// const generateNumberSquares = (numbersLength) => (
-//     numbersLength.map((number) => (
-//
-//     ))
-// )
-
 const app = function () {
     let arrayOfNumbers = generateArrayOfNumbers(144);
 
@@ -30,10 +22,5 @@ const app = function () {
         generateSquare(number);
     });
 };
-
-// dedupedRentalData.forEach((data) => {
-//     let propertyCard = generatePropertyCard(data, listingData);
-//     rentalPropertiesSection.appendChild(propertyCard);
-// });
 
 export default app;

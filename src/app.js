@@ -1,25 +1,22 @@
-// source goes here
+const { generateArrayOfNumbers, generateSquare, handleHighlightedNumbers } = require("../src/helpers");
 
-const generateArrayOfNumbers = (numbersLength) => {
-    return Array.from({ length: numbersLength }, (_, i) => i + 1);
-};
-
-let mainContainer = document.body.querySelector(".main-container");
-
-const generateSquare = (number) => {
-    let squareBox = document.createElement("div");
-    squareBox.setAttribute("class", "square-box");
-    squareBox.innerHTML = number;
-    mainContainer.appendChild(squareBox);
-};
+const NUMBERS_LENGTH = 144;
 
 const app = function () {
-    let arrayOfNumbers = generateArrayOfNumbers(144);
-
-    console.log("ARRAY", arrayOfNumbers);
+    let arrayOfNumbers = generateArrayOfNumbers(NUMBERS_LENGTH);
 
     arrayOfNumbers.forEach((number) => {
         generateSquare(number);
+    });
+
+    let squareBoxes = document.getElementsByTagName("button");
+    squareBoxes = Array.from(squareBoxes);
+
+    squareBoxes.forEach((box) => {
+        box.addEventListener("click", (event) => {
+            event.preventDefault();
+            handleHighlightedNumbers(arrayOfNumbers, parseInt(box.innerHTML));
+        });
     });
 };
 

@@ -10,9 +10,11 @@
 
 :root {
     --main-text-color: #333331;
-    --main-background-color: #F5C2BA;
-    --main-number-background-color: #DE7573;
+    --main-background-color: #DE7573;
+    --main-number-background-color: #F5C2BA;
     --main-number-color: #913946;
+    --main-highlighted-background: #F9E394;
+    --main-highlighted-color: #4B453B;
 }
 
 body {
@@ -25,69 +27,64 @@ body {
 h1 {
     line-height: 1.7;
     font-size: 32px;
+    text-align: center;
 }
 
 h2 {
     line-height: 1.4;
     font-size: 24px;
+    text-align: center;
 }
+
 
 .main-container {
     display: grid;
     grid-template-columns: 100%;
     row-gap: 48px;
     background: var(--main-background-color);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 32px;
 }
 
-
+/*mobile-first approach*/
 .square-box {
     justify-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     color: var(--main-number-color);
     background: var(--main-number-background-color);
-    font-size: 48px;
+    font-size: 64px;
     border: 2px solid var(--main-number-color);
-    border-radius: 4px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
+.highlighted-box {
+    color: var(--main-highlighted-color);
+    background: var(--main-highlighted-background);
+}
+
+/*tablet*/
 @media screen and (min-width: 641px) and (max-width: 1024px) {
     .main-container {
         grid-template-columns: 50% 50%;
     }
-
-    .square-box {
-        /*flex: 1 0 calc(48% - 16px);*/
-        /*max-width: 340px;*/
-    }
 }
 
+/*desktop*/
 @media screen and (min-width: 1025px) {
     .main-container {
         grid-template-columns: 33% 33% 33%;
     }
-
-    .square-box {
-        /*flex: 1 0 calc(33% - 16px);*/
-        /*max-width: 600px;*/
-    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*very large scren*/
+@media screen and (min-width: 1921px) {
+    .main-container {
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+}
